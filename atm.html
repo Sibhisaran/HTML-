@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="atm.js"></script>
+    <link rel="stylesheet" href="atm.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your ATM Pin</h1>
+        <form class="a">
+            <input type="password" name="pin" id="pin" placeholder="Enter PIN" maxlength="6" minlength="4" required><br>
+            <br>
+            <div class="keypad">
+                <button class="key" type="button" onclick="appendNumber(1)">1</button> 
+                <button class="key" type="button" onclick="appendNumber(2)">2</button>
+                <button class="key" type="button" onclick="appendNumber(3)">3</button>
+                <button class="key" type="button" onclick="appendNumber(4)">4</button>
+                <button class="key" type="button" onclick="appendNumber(5)">5</button>
+                <button class="key" type="button" onclick="appendNumber(6)">6</button>
+                <button class="key" type="button" onclick="appendNumber(7)">7</button>
+                <button class="key" type="button" onclick="appendNumber(8)">8</button>
+                <button class="key" type="button" onclick="appendNumber(9)">9</button>
+                <button class="key" type="button" onclick="clearPin()">Clear</button>
+                <button class="key" type="button" onclick="backspacePin()">*</button>
+                <button class="key" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
